@@ -1,0 +1,101 @@
+html,
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: whitesmoke;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.logo {
+  width: 10%;
+  position: absolute;
+  display: inline;
+  left: 2%;
+  top: 2%;
+  z-index: 10;
+}
+
+h2 {
+  display: inline;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  font-weight: 200;
+}
+
+.content {
+  position: relative;
+  margin-top: 12%;
+}
+
+model-viewer {
+  width: 40vw;
+  height: 60vh;
+  position: absolute;
+  left: 10%;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 5rem;
+}
+
+.highlight {
+  color: #DC3545;
+}
+
+.verticle {
+  position: absolute;
+  left: 7vw;
+  bottom: 0;
+  width: 2px;
+  height: 70vh;
+  background-color: black;
+}
+
+.verticle-text {
+  z-index: 1;
+  font-weight: 500;
+  position: absolute;
+  transform: rotate(-90deg);
+  top: 50vh;
+  left: -3vh;
+  background-color: whitesmoke;
+  padding: 0 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    width: 20%;
+    position: absolute;
+    display: inline;
+    left: 2%;
+    top: 2%;
+  }
+
+  .verticle,
+  .verticle-text {
+    display: none;
+  }
+
+  model-viewer {
+    position: relative;
+    margin-top: 20%;
+    width: 80vw;
+    height: 35vh;
+  }
+
+  .right {
+    text-align: center;
+  }
+
+  h1 {
+    padding-top: 5%;
+    font-size: 4rem;
+  }
+
+  .content {
+    position: relative;
+    margin-top: 0%;
+  }
+}
