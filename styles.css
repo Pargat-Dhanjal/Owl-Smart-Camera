@@ -3,7 +3,8 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: whitesmoke;
   overflow-x: hidden;
-  overflow-y: hidden;
+  width: 100vw;
+  height: 100vh;
 }
 
 .logo {
@@ -91,11 +92,17 @@ h1 {
 
   h1 {
     padding-top: 5%;
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 
   .content {
     position: relative;
     margin-top: 0%;
+  }
+
+  html,
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: whitesmoke;
   }
 }
